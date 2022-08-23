@@ -1,0 +1,46 @@
+.bus{
+	text-align: center;
+}
+.card{
+	border: solid 1px;
+	width: 18pc;
+}
+fieldset{
+	width: 20pc;
+	margin-left: 24pc;
+    margin-top: 5pc;
+    text-align: center;
+}
+.input{
+	width: 25pc;
+	margin-top: 2pc;
+}
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+.autocomplete-items {
+  position: relative;
+  z-index: 99;
+  left: 10.5pc;
+  width:10pc;
+}
+.autocomplete-items div {
+  padding: 10px;
+  background-color: #f1f0f0; 
+}
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+.button{
+	background-color: blue;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    width: 4pc;
+    font-size: 16px;
+}
