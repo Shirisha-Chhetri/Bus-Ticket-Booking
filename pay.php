@@ -10,8 +10,8 @@ $p =  $_SESSION['p'];
     $em= $_POST['email'];
   
     
-    $sql1 ="INSERT INTO book(bus_id,user_name,address,contact,email,source,destination,date,seat,amount)
-            VALUES('".$_SESSION['busid']."','$fn','$ad','$co','$em','".$_SESSION['source']."','".$_SESSION['des']."','".$_SESSION['date']."','".$_SESSION['seat']."','$p')";
+    $sql1 ="INSERT INTO book(bus_id,user_name,address,contact,email,source,destination,date,seat_number,no_of_seat,amount)
+            VALUES('".$_SESSION['busid']."','$fn','$ad','$co','$em','".$_SESSION['source']."','".$_SESSION['des']."','".$_SESSION['date']."','".$_SESSION['seat']."','".$_SESSION['num']."','$p')";
 
     if($conn->query($sql1)==TRUE){
     echo "<script>alert('Ticket is booked successfully');

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 23, 2022 at 08:08 AM
+-- Generation Time: Aug 24, 2022 at 05:37 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -37,7 +37,8 @@ CREATE TABLE `book` (
   `source` varchar(50) NOT NULL,
   `destination` varchar(50) NOT NULL,
   `date` date NOT NULL,
-  `seat` int(11) NOT NULL,
+  `no_of_seat` int(11) NOT NULL,
+  `seat_number` varchar(100) NOT NULL,
   `amount` bigint(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -45,9 +46,9 @@ CREATE TABLE `book` (
 -- Dumping data for table `book`
 --
 
-INSERT INTO `book` (`id`, `bus_id`, `user_name`, `address`, `email`, `contact`, `source`, `destination`, `date`, `seat`, `amount`) VALUES
-(11, 3, 'Kia Thapa', 'Baneshwor', 'kiathapa@yahoo.com', 9809888011, 'kailali', 'bajhang', '2022-08-26', 2, 1000),
-(12, 2, 'Mia Dahal', 'Lalitpur', 'miadahal@gmail.com', 9809888011, 'chitwan', 'gulmi', '2022-09-01', 3, 2400);
+INSERT INTO `book` (`id`, `bus_id`, `user_name`, `address`, `email`, `contact`, `source`, `destination`, `date`, `no_of_seat`, `seat_number`, `amount`) VALUES
+(22, 2, 'Kia Thapa', 'Baneshwor', 'kiathapa@yahoo.com', 9809888011, 'kathmandu', 'bajhang', '2022-08-26', 4, 'A11,A12,B6,B7,', 3200),
+(23, 1, 'Mia Dahal', 'Lalitpur', 'miadahal@gmail.com', 9809888011, 'bhaktapur', 'lamjung', '2022-08-26', 4, 'B8,B9,B10,B11,', 4000);
 
 -- --------------------------------------------------------
 
@@ -67,9 +68,9 @@ CREATE TABLE `bus` (
 --
 
 INSERT INTO `bus` (`id`, `Name`, `Total-seats`, `Price`) VALUES
-(1, 'Sajha Yatayat', 35, 1000),
+(1, 'Sajha Yatayat', 36, 1000),
 (2, 'Deluxe Zone', 28, 800),
-(3, 'Lily Deluxe', 15, 500);
+(3, 'Lily Deluxe', 14, 500);
 
 --
 -- Indexes for dumped tables
@@ -96,7 +97,7 @@ ALTER TABLE `bus`
 -- AUTO_INCREMENT for table `book`
 --
 ALTER TABLE `book`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `bus`
