@@ -28,7 +28,7 @@
         <div class="card-body">
           <p>Total_seats: <?php echo $row['Total-seats'];?></p>
           <p>Price per seat: <?php echo $row['Price'];?></p>
-          <a href="http://localhost/New%20folder/book.php?bus=<?php echo $row['id']; ?>" class="btn btn-primary">Book Now</a>
+          <a href="http://localhost/Bus-Ticket-Booking/book.php?bus=<?php echo $row['id']; ?>" class="btn btn-primary">Book Now</a>
         </div>
        </div>
     </div>
